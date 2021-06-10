@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Josefin Sans;
+}
+
+header{
+  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-image: url("./images/bg-desktop-dark.jpg");
+    flex-direction: column;
+    position: relative;
+}
+
+#head {
+    width: 375px;
+    /* margin: 0.5em; */
+    padding:0.5em;
+}
+#title-container{
+    margin: 1em;
+    padding:0.5em;
+    display: flex;
+    justify-content:space-between;
+}
+
+#title{
+    font-size: 36px;
+    font-weight:700;
+    letter-spacing: 4px;
+}
+#icon img{
+    font-size: 18px;
+    font-weight: 400;
+}
+#input{
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: hsl(235, 24%, 19%);
+}
+#add-todo{
+    width: 100%;
+    padding:0.5em;
+    background-color: hsl(235, 24%, 19%);
+    border:none;
+    color: hsl(234, 39%, 85%);
+}
+#todo-container{
+    width: 375px;
+    background-color:hsl(235, 24%, 19%);
+    position: absolute;
+    top:85%;
+    margin: 1em;
+}
+#todos{
+   
+   
+    /* padding: 0.5em; */
+}
+.todo{
+    display: flex;
+    text-align: center;
+    color:hsl(234, 39%, 85%);
+    padding: 1.5em;
+    /* margin: 1em; */
+    border-bottom: 1px solid hsl(233, 14%, 35%);
+}
+.check{
+    /* border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin:.5em; */
+    background:linear-gradient(45deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+   
+}
+.check img{
+    content: url('./images/icon-check.svg');
+    object-fit: contain;
+}
+
+.checkedimg{
+    border-radius: 50%;
+    border:1px solid hsl(233, 14%, 35%);
+   
+    width: 20px;
+    height: 20px;
+    margin:.5em;
+    background-image: url("./images/icon-check.svg");
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    
+}
+
+.unchecked{
+  
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin:.5em;
+    border:1px solid hsl(233, 14%, 35%);
+    background-color:hsl(235, 24%, 19%) ;
+}
+
+.selected{
+    text-decoration: line-through;;
+}
+.todo-content{
+    text-decoration: inherit;
+    margin:.5em;
+}
+
+#data,#buttons{
+    display: flex;
+    justify-content: space-between;
+   
+}
+#items-left ,#buttons,#clear-completed{
+    font-size:12px;
+    font-weight: 400;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    flex-basis: 100%; 
+
+}
+.button{
+    
+    margin:0 0.2rem;
+    cursor:pointer;
+    
+}
+
+.button:hover,#clear-completed:hover{
+    color:hsl(220, 98%, 61%);
+}
+
+
+main{
+
+    height: 100vh;
+    background-color:hsl(235, 21%, 11%);
+}

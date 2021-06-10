@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Todo app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-  Todo
+  <body>
+    <header>
+      <div id="head">
+        <div id="title-container">
+          <div id="title">TODO</div>
+          <div id="icon"><img src="./images/icon-sun.svg" alt="" /></div>
+        </div>
+        <div id="input">
+          <input type="text" name="" id="add-todo" />
+        </div>
+      </div>
+      <div id="todo-container">
+        <div id="todos">
 
-  <!-- Add dynamic number --> items left
 
-  All
-  Active 
-  Completed
+          <!-- <div class="todo">
+            <div class="unchecked"></div>
+            <div class="todo-content">Lorem ipsum dolor sit</div>
+          </div> -->
 
-  Clear Completed
 
-  Drag and drop to reorder list
+          
+        </div>
+        <div id="data">
+          <div id="items-left">0</div>
+          <div id="buttons">
+            <div class="button" id="all" onclick="All()">All</div>
+            <div class="button" id="active" onclick="Active()">Active</div>
+            <div class="button" id="completed" onclick="Completed()">Completed</div>
+          </div>
+          <div class="button" id="clear-completed" onclick="clearSelected()">Clear Completed</div>
+        </div>
+      </div>
+    </header>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <main></main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Nakul Gopal</a>.
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
